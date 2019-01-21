@@ -1,3 +1,11 @@
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(function () {
+    console.log('Registration Working');
+  }).catch(function () {
+    console.log('Failed');
+  });
+}
+
 let restaurants,
   neighborhoods,
   cuisines
